@@ -1,20 +1,10 @@
-/* Includes ------------------------------------------------------------------*/
 #include "main.h"
 
-/* Private typedef -----------------------------------------------------------*/
-/* Private define ------------------------------------------------------------*/
-/* Private macro -------------------------------------------------------------*/
-/* Private variables ---------------------------------------------------------*/
-static __IO uint32_t uwTimingDelay;
-RCC_ClocksTypeDef RCC_Clocks;
-
-/* Private function prototypes -----------------------------------------------*/
-
-
-/* Private functions ---------------------------------------------------------*/
 int main(void)
 {
-	RCC_GetClocksFreq(&RCC_Clocks);
-	SysTick_Config(RCC_Clocks.HCLK_Frequency / 100);
-	while(1){}
+	Bsp_init();  	//GPIO change with Bsp.c
+    GPIO_WriteBit(GPIOD, GPIO_Pin_12, Bit_SET);
+    GPIO_WriteBit(GPIOD, GPIO_Pin_13, Bit_SET);
+    GPIO_WriteBit(GPIOD, GPIO_Pin_14, Bit_RESET);
+    GPIO_WriteBit(GPIOD, GPIO_Pin_15, Bit_RESET);
 }
