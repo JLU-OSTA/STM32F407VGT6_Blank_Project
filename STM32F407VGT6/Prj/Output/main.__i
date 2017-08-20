@@ -1,6 +1,0 @@
---c99 -c --cpu Cortex-M4.fp -D__EVAL -g -O0 --apcs=interwork --split_sections -I ..\CMSIS -I ..\Driver -I ..\Library\inc -I ..\User
--I.\RTE\_STM32F407VGT6
--IE:\Keil_v5\ARM\PACK\Keil\STM32F4xx_DFP\2.11.0\Drivers\CMSIS\Device\ST\STM32F4xx\Include
--IE:\Keil_v5\ARM\CMSIS\Include
--D__UVISION_VERSION="523" -DSTM32F407xx -DUSE_STDPERIPH_DRIVER -DSTM32F40XX
--o .\output\main.o --omf_browse .\output\main.crf --depend .\output\main.d "..\User\main.c"

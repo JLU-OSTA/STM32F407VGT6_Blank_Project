@@ -1,3 +1,4 @@
+
 /**
   ******************************************************************************
   * @file    Project/STM32F4xx_StdPeriph_Templates/stm32f4xx_conf.h  
@@ -150,6 +151,8 @@
 /* #define USE_FULL_ASSERT    1 */
 
 /* Exported macro ------------------------------------------------------------*/
+
+
 #ifdef  USE_FULL_ASSERT
 
 /**
@@ -166,6 +169,9 @@
 #else
   #define assert_param(expr) ((void)0)
 #endif /* USE_FULL_ASSERT */
+
+
+
 
 #endif /* __STM32F4xx_CONF_H */
 
