@@ -29,7 +29,6 @@
 
 /* Includes ------------------------------------------------------------------*/
 #include "stm32f4xx_it.h"
-#include "main.h"
 
 /** @addtogroup Template_Project
   * @{
@@ -139,6 +138,9 @@ void PendSV_Handler(void)
   * @param  None
   * @retval None
   */
+void SysTick_Handler(void)
+{
+}
 
 /******************************************************************************/
 /*                 STM32F4xx Peripherals Interrupt Handlers                   */
